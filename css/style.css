@@ -126,11 +126,7 @@ nav ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
     display: flex;
-    align-items: center;
-
 }
 
 .hero__contenedor {
@@ -138,13 +134,6 @@ nav ul {
     color: #fff;
     width: 60%;
     gap: 10px;
-}
-
-.hero__contenedor p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    padding-right: 150px;
-    margin: 15px 0;
 }
 
 .hero__titulo {
@@ -160,22 +149,22 @@ nav ul {
 
 .nosotros {
     background: #191919;
-    display: flex;
-    padding: 30px;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
     color: #fff;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
+    height: 100%;
+    gap:10px;
 }
 
 .nosotros__info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    width: 40%;
-
+    justify-content: space-evenly;
+    width: 90%;
 }
 
 .nosotros__info h2 {
@@ -200,20 +189,24 @@ nav ul {
 .tarjetas {
     background-color: #191919;
     width: 100%;
-    padding: 40px 10px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
+    height: 100%;
+    padding: 40px 30px;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px
 }
 
 .tarjeta {
     background-color: #eee;
-    width: 30%;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 5px;
 }
 .tarjeta img {
     width: 100%;
-    height: 500px;
+    height: 65vh;
     object-fit: cover;
     transition: 0.2s;
 }
@@ -229,29 +222,47 @@ nav ul {
     font-size: 25px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+}
+
+.tarjeta__contenedora h2 {
+    margin: 0;
 }
 
 /*SECCION ESPECIALES*/
 
-.tarjeta-e {
+.tarjetas--e {
+    background-color: #191919;
+    width: 100%;
+    height: 100%;
+    padding: 40px 80px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+}
+
+.tarjeta--e {
     background-color: #eee;
-    width: 30%;
+    width: 80%;
+    height: 95vh;
+    padding: 10px;
+    border-radius: 5px;
     filter:blur(10px);
     transition: 0.2s;
 }
-.tarjeta-e:hover {
+.tarjeta--e:hover {
     filter:blur(0px);
     
 }
 
-.tarjeta-e img { 
+.tarjeta--e img { 
     width: 100%;
-    height: 500px;
+    height: 65vh;
     object-fit: cover;
 }
 
-.tarjeta-e__contenedora {
+.tarjeta--e__contenedora {
     padding: 10px;
     font-family: bebas;
     font-size: 25px;
@@ -260,54 +271,56 @@ nav ul {
     gap: 10px;
 }
 
-/* CONTACTO */
-.main {
-    background: #fff6ed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.tarjeta--e__contenedora h2 {
+    margin: 0;
 }
 
-.formulario {
-    display: flex;
+/* CONTACTO */
+.contacto {
+    background-color: #fff6ed;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
     align-items: center;
     width: 100%;
     padding: 10px;
+    gap: 10px;
 }
 
-.formulario img {
-    width: 60%;
-    height: 150%;
+.contacto img {
+    width: 100%;
+    height: 90%;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.contacto h2 {
+    font-family: bebas;
 }
 
 .form {
     background: #000;
     color: #fff;
-    width: 100%;
-    height: 100%;
+    width: 97%;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
-    padding: 20px;
-    margin: 20px;
+    padding: 6px;
     border-radius: 5px;
 }
 
 .form__content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     font-family: bebas;
     font-size: 20px;
 }
 
 .form__content input {
-    padding: 10px;
+    padding: 5px;
     font-family: bebas;
     font-size: 20px;
     background: #eee;
@@ -347,9 +360,11 @@ nav ul {
 
 footer {
     background: #000;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    gap: 20px;
+    padding: 10px 20px;
 }
 
 footer section {
@@ -366,22 +381,231 @@ footer section {
     list-style: none;
 }
 
-footer section form input {
-    background-color: #191919;
-    color: #fff;
-    padding: 10px;
-    outline: none;
-    font-family: bebas;
+
+
+@media screen and (max-width: 1020px) {
+
+    .nosotros {
+        height: 100%;
+        padding: 10px;
+    }
+
+
+    .tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+        height: 100%;
+        padding: 10px 10px;
+    }
+
+    .tarjetas--e {
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        padding: 10px 10px;
+    }
+
+    .contacto {
+        height: 100%;
+        gap:10px;
+        padding: 10px 10px;
+    }
+
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    iframe {
+        width: 280px;
+    }
 }
 
-footer section form {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+@media screen and (max-width: 920px) {
+
+    .nosotros {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 40px;
+    }
+
+    .nosotros__info h2 {
+        font-size: 40px;
+        padding: 10px 0;
+    }
+
+    .nosotros__info p {
+        font-size: 20px;
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        width: 100%;
+        padding: 10px 10px;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .tarjeta__contenedora {
+        font-size: 19px;
+        gap: 5px;
+    }
+
+    .tarjetas--e {
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        padding: 10px 10px;
+    }
+
+    .tarjeta--e {
+        height: 100%;
+        width: 100%;
+    }
+
+    .tarjeta--e__contenedora {
+        font-size: 19px;
+        gap: 5px;
+    }
+
+
+    .contacto {
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        gap:10px;
+    }
+
+    .form {
+        width: 97%;
+        height: 90%;
+    }
+
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    iframe {
+        width: 280px;
+    }
+}
+@media screen and (min-width: 620px) and (max-width: 829px) {
+
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .contacto {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 10px 20px;
+        gap:10px;
+    }
+    
+    
 }
 
-footer section form button.btn {
-    width: 100%;
-    font-size: 24;
-    padding: 5px;
+@media screen and (min-width: 480px) and (max-width: 619px) {
+
+    .tarjetas {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    
+    .tarjetas--e {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 10px 10px;
+    }
+
+    .contacto {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 10px 20px;
+        gap:10px;
+    }
+    
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+    .hero__contenedor {
+        padding: 100px 20px;;
+        width: 100%;
+    }
+
+    .hero__titulo {
+        font-size: 70px;
+    }
+
+    .nosotros {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 40px;
+    }
+
+    .nosotros__info h2 {
+        font-size: 40px;
+        padding: 10px 0;
+    }
+
+    .nosotros__info p {
+        font-size: 20px;
+    }
+
+
+    .tarjetas {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 10px 10px;
+    }
+
+    .tarjeta {
+        height: 100%;
+        width: 100%;
+    }
+
+    .tarjeta__contenedora {
+        font-size: 19px;
+        gap: 5px;
+    }
+
+    .tarjetas--e {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 10px 10px;
+    }
+
+    .tarjeta--e {
+        height: 100%;
+        width: 100%;
+    }
+
+    .tarjeta--e__contenedora {
+        font-size: 19px;
+        gap: 5px;
+    }
+
+    .contacto {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        gap:10px;
+    }
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    iframe {
+        width: 280px;
+    }
+
 }
