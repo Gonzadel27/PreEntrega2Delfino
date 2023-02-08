@@ -1,0 +1,14 @@
+//IMPORT DE BASE
+@import "./base/reset";
+@import "./base/vars";
+
+//IMPORT COMPONENTS
+@import "./components/header";
+@import "./components/footer";
+
+//IMPORT LAYOUT
+@import "./layout/index";
+@import "./layout/sobrenosotros";
+@import "./layout/productos";
+@import "./layout/contacto";
+@import "./layout/medias";

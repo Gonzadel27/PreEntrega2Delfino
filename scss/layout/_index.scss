@@ -1,0 +1,24 @@
+/* MAIN */
+.hero {
+    background-image: url(../assets/hero.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.hero__contenedor {
+    padding: 200px 50px;
+    color: #fff;
+    width: 60%;
+    gap: 10px;
+}
+
+.hero__titulo {
+    font-family: bebas;
+    font-size: 80px;
+    color: #fff;
+}
+
+

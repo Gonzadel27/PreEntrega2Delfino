@@ -1,0 +1,80 @@
+/* CONTACTO */
+.contacto {
+    background-color: #fff6ed;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+
+    img {
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-family: bebas;
+    }
+}
+
+.form {
+    background: #000;
+    color: #fff;
+    width: 97%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 5px;
+
+    .form__content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-family: bebas;
+        font-size: 20px;
+    }
+    
+    input {
+        padding: 5px;
+        font-family: bebas;
+        font-size: 20px;
+        background: #eee;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        resize: none;
+    
+    }
+    
+    .form__content--check {
+        display: flex;
+        font-family: bebas;
+        font-size: 20px;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .form__btn {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        transition: 0.3s;
+    
+    :hover {
+        transform: scale(1, 1.10);
+        background-color: #f8d5a7;
+    }
+    
+    }
+}
+
+

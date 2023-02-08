@@ -1,0 +1,26 @@
+/* FOOTER */
+
+footer {
+background: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    gap: 20px;
+    padding: 10px 20px;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-family: $font-main;
+        font-size: 24px;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: #fff;
+        list-style: none;
+    }
+}
+
+

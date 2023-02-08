@@ -1,0 +1,90 @@
+/* PAGINA PRODUCTOS*/
+
+.tarjetas {
+    background-color: $color-main;
+    width: 100%;
+    height: 100%;
+    padding: 40px 30px;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px
+}
+
+.tarjeta {
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 5px;
+}
+.tarjeta img {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+.tarjeta img:hover {
+    transform: scale(1.05, 1.05);
+
+}
+
+.tarjeta__contenedora {
+    padding: 10px;
+    font-family: $font-main;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarjeta__contenedora h2 {
+    margin: 0;
+}
+
+/*SECCION ESPECIALES*/
+
+.tarjetas--e {
+    background-color: $color-main;
+    width: 100%;
+    height: 100%;
+    padding: 40px 80px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+}
+
+.tarjeta--e {
+    background-color: #eee;
+    width: 80%;
+    height: 95vh;
+    padding: 10px;
+    border-radius: 5px;
+    filter:blur(10px);
+    transition: 0.2s;
+}
+.tarjeta--e:hover {
+    filter:blur(0px);
+    
+}
+
+.tarjeta--e img { 
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+}
+
+.tarjeta--e__contenedora {
+    padding: 10px;
+    font-family: $font-main;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarjeta--e__contenedora h2 {
+    margin: 0;
+}
