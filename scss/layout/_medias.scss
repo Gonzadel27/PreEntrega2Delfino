@@ -146,6 +146,12 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
+    .hero{
+        background-image: url(../assets/hero2.jpg);
+    }
+    .hero__titulo {
+        font-size: 43px;
+    }
     .nosotros {
         grid-template-columns: repeat(1, 1fr);
         height: 100%;

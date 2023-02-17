@@ -17,11 +17,11 @@ a {
   text-decoration: none; }
 
 .second-color {
-  color: #8d511f; }
+  color: #ff6900; }
 
 .btn {
   color: #000;
-  background-color: #d18242;
+  background-color: #ff6900;
   padding: 10px;
   width: 150px;
   border-radius: 3px;
@@ -50,13 +50,13 @@ header {
     padding: 10px; }
     header nav a {
       color: #fff;
-      background-image: linear-gradient(#8d511f, #8d511f);
+      background-image: linear-gradient(#ff6900, #ff6900);
       background-position: 40% 100%;
       background-repeat: no-repeat;
       background-size: 0% 2px;
       transition: background-size 0.3s; }
     header nav :hover {
-      background-image: linear-gradient(#8d511f #8d511f);
+      background-image: linear-gradient(#ff6900 #ff6900);
       background-size: 100% 2px; }
     header nav ul {
       color: #fff;
@@ -120,8 +120,8 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 90vh;
+  max-width: 100%;
+  height: 95vh;
   display: flex; }
 
 .hero__contenedor {
@@ -133,7 +133,7 @@ footer {
 
 .hero__titulo {
   font-family: oxy;
-  font-size: 70px;
+  font-size: 60px;
   color: #fff; }
 
 /* NOSOTROS */
@@ -158,7 +158,7 @@ footer {
 .nosotros__info h1 {
   font-family: oxy;
   font-size: 50px;
-  padding: 20px 0; }
+  border-bottom: solid #ff6900; }
 
 .nosotros__info p {
   font-family: 'Open Sans', sans-serif;
@@ -250,7 +250,8 @@ footer {
 
 /* CONTACTO */
 .contacto {
-  background-color: #fff6ed;
+  /*fff6ed*/
+  background-color: #ffb683;
   display: grid;
   grid-template-columns: 50% 50%;
   height: 100%;
@@ -262,13 +263,13 @@ footer {
     width: 100%;
     height: 90%;
     object-fit: cover;
-    border-radius: 5px; }
+    border-radius: 50px; }
   .contacto h2 {
     font-family: oxy; }
 
 .form {
-  background: #59a2ac;
-  color: #fff;
+  background: #191919;
+  color: #ff6900;
   width: 97%;
   height: 100%;
   display: flex;
@@ -397,6 +398,10 @@ footer {
     gap: 10px; } }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero {
+    background-image: url(../assets/hero2.jpg); }
+  .hero__titulo {
+    font-size: 43px; }
   .nosotros {
     grid-template-columns: repeat(1, 1fr);
     height: 100%;
