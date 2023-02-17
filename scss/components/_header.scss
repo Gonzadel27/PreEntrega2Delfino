@@ -22,7 +22,7 @@ header {
     ;
     font-family: $font-main;
     height: 70px;
-    font-size: 32px;
+    font-size: 27px;
     position: sticky;
     top: 0;
     width: 100%;
@@ -80,15 +80,15 @@ header {
 
     h1 {
         background-image: linear-gradient(#fff, #fff);
-        background-position: 40% 100%;
+        background-position: 20% 100%;
         background-repeat: no-repeat;
-        background-size: 0% 7px;
+        background-size: 0% 2px;
         transition: background-size 0.3s;
     }
 
     :hover {
         background-image: linear-gradient(#fff, #fff);
-        background-size: 100% 7px;
+        background-size: 100% 2px;
     }
     
 }

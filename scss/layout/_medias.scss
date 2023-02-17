@@ -8,9 +8,10 @@
 
 
     .tarjetas {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         height: 100%;
         padding: 10px 10px;
+        gap:10px;
     }
 
     .tarjetas--e {

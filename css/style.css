@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oxygen:wght@700&display=swap");
 @font-face {
-  font-family: bebas;
-  src: url(../assets/font/NotoSansTangsa-SemiBold.ttf); }
+  font-family: oxy;
+  src: url(../assets/font/Oxygen-Bold.ttf); }
 
 /* * = selector universal para reseteo de estilos por default del html*/
 * {
@@ -25,7 +25,7 @@ a {
   padding: 10px;
   width: 150px;
   border-radius: 3px;
-  font-family: bebas;
+  font-family: oxy;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,9 +34,9 @@ a {
 /* HEADER */
 header {
   background-color: #191919;
-  font-family: bebas;
+  font-family: oxy;
   height: 70px;
-  font-size: 32px;
+  font-size: 27px;
   position: sticky;
   top: 0;
   width: 100%;
@@ -72,7 +72,7 @@ header {
   background-position: center;
   background-size: cover;
   color: #fff;
-  font-family: bebas;
+  font-family: oxy;
   font-size: 40px;
   width: 100%;
   height: 300px;
@@ -81,17 +81,17 @@ header {
   justify-content: center; }
   .herobg h1 {
     background-image: linear-gradient(#fff, #fff);
-    background-position: 40% 100%;
+    background-position: 20% 100%;
     background-repeat: no-repeat;
-    background-size: 0% 7px;
+    background-size: 0% 2px;
     transition: background-size 0.3s; }
   .herobg :hover {
     background-image: linear-gradient(#fff, #fff);
-    background-size: 100% 7px; }
+    background-size: 100% 2px; }
 
 .subtitle {
   color: #fff;
-  font-family: bebas;
+  font-family: oxy;
   font-size: 30px; }
 
 /* FOOTER */
@@ -106,8 +106,8 @@ footer {
     display: flex;
     flex-direction: column;
     color: #fff;
-    font-family: bebas;
-    font-size: 24px; }
+    font-family: oxy;
+    font-size: 20px; }
   footer .footer-link {
     text-decoration: none;
     color: #fff;
@@ -120,17 +120,20 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
+  height: 90vh;
   display: flex; }
 
 .hero__contenedor {
-  padding: 200px 50px;
+  padding: 200px 20px;
   color: #fff;
-  width: 60%;
+  width: 50%;
+  height: auto;
   gap: 10px; }
 
 .hero__titulo {
-  font-family: bebas;
-  font-size: 80px;
+  font-family: oxy;
+  font-size: 70px;
   color: #fff; }
 
 /* NOSOTROS */
@@ -153,12 +156,12 @@ footer {
   width: 90%; }
 
 .nosotros__info h1 {
-  font-family: bebas;
+  font-family: oxy;
   font-size: 50px;
   padding: 20px 0; }
 
 .nosotros__info p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 28px; }
 
 .nosotros img {
@@ -175,18 +178,19 @@ footer {
   margin: 0%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   gap: 20px; }
 
 .tarjeta {
   background-color: #eee;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   padding: 2%;
   border-radius: 5px; }
 
 .tarjeta img {
-  width: 100%;
-  height: 65vh;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   transition: 0.2s; }
 
@@ -195,7 +199,7 @@ footer {
 
 .tarjeta__contenedora {
   padding: 10px;
-  font-family: bebas;
+  font-family: oxy;
   font-size: 25px;
   display: flex;
   flex-direction: column;
@@ -213,12 +217,13 @@ footer {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px; }
+  justify-items: center;
+  gap: 20px; }
 
 .tarjeta--e {
   background-color: #eee;
-  width: 80%;
-  height: 95vh;
+  max-width: 100%;
+  height: auto;
   padding: 10px;
   border-radius: 5px;
   filter: blur(10px);
@@ -228,13 +233,13 @@ footer {
   filter: blur(0px); }
 
 .tarjeta--e img {
-  width: 100%;
-  height: 65vh;
+  max-width: 100%;
+  height: auto;
   object-fit: cover; }
 
 .tarjeta--e__contenedora {
   padding: 10px;
-  font-family: bebas;
+  font-family: oxy;
   font-size: 25px;
   display: flex;
   flex-direction: column;
@@ -248,7 +253,7 @@ footer {
   background-color: #fff6ed;
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 100vh;
+  height: 100%;
   align-items: center;
   width: 100%;
   padding: 10px;
@@ -259,13 +264,13 @@ footer {
     object-fit: cover;
     border-radius: 5px; }
   .contacto h2 {
-    font-family: bebas; }
+    font-family: oxy; }
 
 .form {
-  background: #000;
+  background: #59a2ac;
   color: #fff;
   width: 97%;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -276,19 +281,20 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    font-family: bebas;
+    font-family: oxy;
     font-size: 20px; }
   .form input {
     padding: 5px;
-    font-family: bebas;
+    font-family: oxy;
     font-size: 20px;
     background: #eee;
     border-radius: 5px; }
   .form textarea {
-    resize: none; }
+    resize: none;
+    padding: 5px; }
   .form .form__content--check {
     display: flex;
-    font-family: bebas;
+    font-family: oxy;
     font-size: 20px;
     width: 50%;
     align-items: center;
@@ -302,14 +308,15 @@ footer {
       transform: scale(1, 1.1);
       background-color: #f8d5a7; }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1080px) {
   .nosotros {
     height: 100%;
     padding: 10px; }
   .tarjetas {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     height: 100%;
-    padding: 10px 10px; }
+    padding: 10px 10px;
+    gap: 10px; }
   .tarjetas--e {
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
@@ -335,10 +342,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     width: 100%;
-    padding: 10px 10px;
-    align-items: center; }
+    padding: 10px 10px; }
   .tarjeta {
-    width: 100%; }
+    max-width: 100%; }
   .tarjeta__contenedora {
     font-size: 19px;
     gap: 5px; }
@@ -348,7 +354,7 @@ footer {
     padding: 10px 10px; }
   .tarjeta--e {
     height: 100%;
-    width: 100%; }
+    max-width: 100%; }
   .tarjeta--e__contenedora {
     font-size: 19px;
     gap: 5px; }
@@ -377,8 +383,8 @@ footer {
 @media screen and (min-width: 480px) and (max-width: 619px) {
   .tarjetas {
     grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
     height: 100%;
-    width: 100%;
     padding: 10px 10px; }
   .tarjetas--e {
     grid-template-columns: repeat(1, 1fr);
@@ -391,11 +397,6 @@ footer {
     gap: 10px; } }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .hero__contenedor {
-    padding: 100px 20px;
-    width: 100%; }
-  .hero__titulo {
-    font-size: 70px; }
   .nosotros {
     grid-template-columns: repeat(1, 1fr);
     height: 100%;
@@ -407,11 +408,7 @@ footer {
     font-size: 20px; }
   .tarjetas {
     grid-template-columns: repeat(1, 1fr);
-    height: 100%;
     padding: 10px 10px; }
-  .tarjeta {
-    height: 100%;
-    width: 100%; }
   .tarjeta__contenedora {
     font-size: 19px;
     gap: 5px; }
@@ -419,9 +416,6 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     height: 100%;
     padding: 10px 10px; }
-  .tarjeta--e {
-    height: 100%;
-    width: 100%; }
   .tarjeta--e__contenedora {
     font-size: 19px;
     gap: 5px; }
