@@ -5,7 +5,7 @@
 
 .btn {
     color: #000;
-    background-color:#ff6900;
+    background-color: $color-second;
     padding: 10px;
     width: 150px;
     border-radius: 3px;
@@ -19,7 +19,6 @@
 /* HEADER */
 header {
     background-color:$color-main;
-    ;
     font-family: $font-main;
     height: 70px;
     font-size: 27px;
