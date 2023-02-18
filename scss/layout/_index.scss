@@ -8,13 +8,14 @@
     max-width: 100%;
     max-height: 100%;
     display: flex;
-}
 
-.hero__contenedor {
-    padding: 200px 20px;
-    width: 45%;
-    height: auto;
-    gap: 10px;
+    .hero__contenedor {
+        padding: 200px 20px;
+        width: 45%;
+        height: auto;
+        gap: 10px;
+    }
+
 }
 
 .hero__titulo {
@@ -22,5 +23,3 @@
     font-size: 60px;
     color: $color-second;
 }
-
-
