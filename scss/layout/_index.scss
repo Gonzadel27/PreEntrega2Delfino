@@ -9,17 +9,17 @@
     max-height: 100%;
     display: flex;
 
-    .hero__contenedor {
-        padding: 200px 20px;
+    &__contenedor {
+        padding: 300px 20px;
         width: 45%;
         height: auto;
         gap: 10px;
     }
 
+    &__titulo {
+        font-family: $font-main;
+        font-size: 60px;
+        color: $color-second;
+    }
 }
 
-.hero__titulo {
-    font-family: $font-main;
-    font-size: 60px;
-    color: $color-second;
-}

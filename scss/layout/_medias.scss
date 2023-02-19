@@ -39,16 +39,16 @@
         grid-template-columns: repeat(1, 1fr);
         height: 100%;
         padding: 40px;
-    }
-
-    .nosotros__info h1 {
+    
+    h1 {
         font-size: 40px;
         padding: 10px 0;
     }
 
-    .nosotros__info p {
+    p {
         font-size: 20px;
     }
+}
 
     .tarjetas {
         grid-template-columns: repeat(2, 1fr);
@@ -59,12 +59,14 @@
 
     .tarjeta {
         max-width: 100%;
+
+    &__contenedora {
+            font-size: 19px;
+            gap: 5px;
+        }
     }
 
-    .tarjeta__contenedora {
-        font-size: 19px;
-        gap: 5px;
-    }
+
 
     .tarjetas--e {
         grid-template-columns: repeat(2, 1fr);
@@ -75,11 +77,11 @@
     .tarjeta--e {
         height: 100%;
         max-width: 100%;
-    }
-
-    .tarjeta--e__contenedora {
-        font-size: 19px;
-        gap: 5px;
+        
+        &__contenedora {
+            font-size: 19px;
+            gap: 5px;
+        }
     }
 
 
@@ -87,11 +89,11 @@
         grid-template-columns: repeat(2, 1fr);
         height: 100%;
         gap:10px;
-    }
 
-    .form {
-        width: 97%;
-        height: 90%;
+        .form {
+            width: 97%;
+            height: 90%;
+        }
     }
 
 
@@ -149,41 +151,41 @@
     .hero__titulo {
         font-size: 43px;
     }
+
     .nosotros {
         grid-template-columns: repeat(1, 1fr);
         height: 100%;
         padding: 40px;
-    }
 
-    .nosotros__info h1 {
-        font-size: 40px;
-        padding: 10px 0;
+        h1 {
+            font-size: 40px;
+            padding: 10px 0;
+        }
+    
+        p {
+            font-size: 20px;
+        }
     }
-
-    .nosotros__info p {
-        font-size: 20px;
-    }
-
 
     .tarjetas {
         grid-template-columns: repeat(1, 1fr);
         padding: 10px 10px;
-    }
 
-    .tarjeta__contenedora {
-        font-size: 19px;
-        gap: 5px;
+        &__contenedora {
+            font-size: 19px;
+            gap: 5px;
+        }
     }
 
     .tarjetas--e {
         grid-template-columns: repeat(1, 1fr);
         height: 100%;
         padding: 10px 10px;
-    }
 
-    .tarjeta--e__contenedora {
-        font-size: 19px;
-        gap: 5px;
+        &__contenedora {
+            font-size: 19px;
+            gap: 5px;
+        }
     }
 
     .contacto {
@@ -195,5 +197,4 @@
     footer {
         grid-template-columns: repeat(1, 1fr);
     }
-
 }

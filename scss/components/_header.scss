@@ -29,10 +29,11 @@ header {
             background-repeat: no-repeat;
             background-size: 0% 2px;
             transition: background-size 0.3s;
-        }
-        :hover {
-            background-image: linear-gradient($color-second $color-second);
-            background-size: 100% 2px;
+
+            &:hover {
+                background-image: linear-gradient($color-second $color-second);
+                background-size: 100% 2px;
+            }
         }
     
         ul {

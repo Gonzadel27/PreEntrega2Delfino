@@ -1,0 +1,22 @@
+@mixin estilots($bg, $alto, $ancho, $p, $m) {
+    background-color: $bg;
+    width: $ancho;
+    height: $alto;
+    padding: $p;
+    margin: $m;
+}
+@mixin contenedora ($p, $font, $fontz, $dis, $dir, $gap) {
+    padding: $p;
+    font-family: $font;
+    font-size: $fontz;
+    display: $dis;
+    flex-direction: $dir;
+    gap: $gap;
+}
+
+@mixin grid ($d, $tc, $ji, $gap) {
+    display: $d;
+    grid-template-columns: $tc;
+    justify-items: $ji;
+    gap: $gap;
+}

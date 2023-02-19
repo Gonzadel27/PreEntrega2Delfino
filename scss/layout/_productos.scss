@@ -1,101 +1,73 @@
 /* PAGINA PRODUCTOS*/
 .tarjetas {
-    background-color: $color-main;
-    width: 100%;
-    height: 100%;
-    padding: 40px 30px;
-    margin: 0%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap:25px;
+    @include estilots ($color-main, 100%, 100%, 40px 30px, 0);
+    @include grid (grid, repeat(3, 1fr), center, 25px);
 
     .tarjeta {
         background-color: #eee;
         max-width: 100%;
+        border-radius: 5px;
         height: 100%;
         padding: 2%;
-        border-radius: 5px;
-    
+
         img {
-            max-width: 100%; 
+            max-width: 100%;
             height: auto;
             object-fit: cover;
             transition: 0.2s;
-        :hover {
-            transform: scale(1.05, 1.05);
+
+            &:hover {
+                transform: scale(1.05, 1.05);
+            }
         }
-        }
-        
-        .tarjeta__contenedora {
-            padding: 10px;
-            font-family: $font-main;
-            font-size: 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        
-            h2 {
+
+        &__contenedora {
+            @include contenedora (10px, $font-main, 25px, flex, column, 10px);
+            p {
+                border-bottom: solid 2px;
                 margin: 0;
             }
-            
+
         }
     }
-    
+
 }
 
 /*SECCION ESPECIALES*/
 
 .tarjetas--e {
-    background-color: $color-main;
-    width: 100%;
-    height: 100%;
-    padding: 40px 80px;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    gap: 25px;
+    @include estilots ($color-main, 100%, 100%, 40px 80px, 0);
+    @include grid (grid, repeat(2, 1fr), center, 25px);
 
     .tarjeta--e {
         background-color: #eee;
-        max-width: 100%; 
+        max-width: 100%;
+        border-radius: 5px;
+        height: 100%;
+        padding: 2%;
         height: auto;
         padding: 10px;
-        border-radius: 5px;
-        filter:blur(10px);
+        filter: blur(10px);
         transition: 0.2s;
-    
-        :hover {
-            filter:blur(0px);
-            
+
+        &:hover {
+            filter: blur(0px);
+
         }
-    
-        img { 
+
+        img {
             max-width: 100%;
             height: auto;
             object-fit: cover;
         }
-    
-        .tarjeta--e__contenedora {
-            padding: 10px;
-            font-family: $font-main;
-            font-size: 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            
-            h2 {
+
+        &__contenedora {
+            @include contenedora (10px, $font-main, 25px, flex, column, 10px);
+            p {
+                border-bottom: solid 2px;
                 margin: 0;
             }
+
         }
     }
 }
-
-
-
-
-
-
-
-
